@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About the project
+This project is a platform that enables sharing of recommended learning materials amongst entry-level peers to break into frontend web development.
+
 ## Available Scripts
 
 In the project directory, you can run:
