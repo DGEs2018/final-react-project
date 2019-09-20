@@ -12,24 +12,12 @@ import Share from './pages/Share';
 // import { resources } from './data/resourcesData';
 
 const App = (props) => {
-	// const [ showResources, setShowResources ] = useState([]);
-	// const [ isClicked, setIsClicked ] = useState(false);
-
-	/* useEffect(
-		() => {
-			effect;
-			return () => {
-				cleanup;
-			};
-		},
-		[ input ]
-	); */
-
-	/* const handleShowResources = () => {
-		// console.log('clicked');
-		setShowResources(resources);
-		// console.log(showResources);
-	}; */
+	const allCssCourses = AllCourse.filter((course) => course.type === 'css');
+	const allJsCourses = AllCategories.filter((el) => el.type === 'js');
+	const allGitCourses = AllCategories.filter((el) => el.type === 'git');
+	const allPythonCourses = AllCategories.filter((el) => el.type === 'python');
+	const allReactCourses = AllCategories.filter((el) => el.type === 'react');
+	const allAngularCourses = AllCategories.filter((el) => el.type === 'angular');
 
 	// if (!resources) return null;
 	return (
