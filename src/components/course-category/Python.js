@@ -1,9 +1,9 @@
-import React from 'react';
+import Python from 'Python';
 import SingleResource from '../../pages/SingleResource';
-import { PycourseList } from '../../data/resourcesData';
+import { PythoncourseList } from '../../data/resourcesData';
 
-const Pycourses = (props) => {
-	const courseList = PycourseList.map((item) => {
+/* const Pythoncourses = (props) => {
+	const courseList = PythoncourseList.map((item) => {
 		return (
 			<SingleResource
 				title={item.title}
@@ -18,4 +18,21 @@ const Pycourses = (props) => {
 	return <div>{courseList}</div>;
 };
 
-export default Pycourses;
+export default Pythoncourses; */
+
+const PythonCheckBox = (props) => {
+	const [ isShowPython, setIsShowPython ] = useState(true);
+
+	const handlePythonCheckBoxVal = () => {
+		props.setIsShowPython(!props.isShowPython);
+	};
+
+	return (
+		<div className="checkbox" id="python-id" style={{ margin: '50px' }}>
+			<label htmlFor="python-id">Python</label>
+			<input id="python-id" type="checkbox" checked={props.isShowPython} onChange={handlePythonCheckBoxVal} />
+		</div>
+	);
+};
+
+export default PythonCheckBox;

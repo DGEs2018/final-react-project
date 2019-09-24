@@ -1,15 +1,23 @@
 import React from 'react';
 
 const SingleResource = (props) => {
-	console.log(props);
+	const style = {
+		// display: 'flex',
+		justifyContent: 'flex-start',
+		flexDirection: 'column',
+		borderRadius: '1px solid grey',
+		backgroundColor: 'lightgrey',
+		lineHeight: '24px'
+	};
 	return (
-		<div>
-			{/* <h2>Course Title</h2>
-			<h3>Course Overview</h3>
-			<p>Course Description</p>
-            <h6>Level</h6> */}
-			{props.el}
-			{/* console.log(props.el) */}
+		<div className="single-resource" style={style}>
+			{/* <h1>Hello SingleResource</h1> */}
+			<h1>{props.title}</h1>
+			<h2>{props.coursetype}</h2>
+			<p>{props.overview}</p>
+			<img src={props.link_photo} alt="something" />
+			<h3>{props.level}</h3>
+			<p>{props.instructor_name}</p>
 		</div>
 	);
 };

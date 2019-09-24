@@ -1,31 +1,25 @@
 import React from 'react';
-import { BrowserRouter, Route, Redirect, NavLink } from 'react-router-dom';
-import {
-	JScourseList,
-	CSScourseList,
-	GitcourseList,
-	ReactcourseList,
-	PycourseList,
-	AngularcourseList
-} from '../data/resourcesData';
-import AllCategories from '../components/course-category/AllCategories';
-import Csscourses from '../components/course-category/CSS';
+import { allCoursesList } from '../data/resourcesData';
+import SingleResource from './SingleResource';
 
-const Resources = (props) => {
-	const [ isShowAngular, setIsShowAngular ] = useState(true);
+const Resources = () => {
 	return (
-		// checkbox angular setIsAngualar !isAngular
-		//CourseList.filter(course =>{
-		//   if (coursetype === 'angular) return course
-		// }).map(course => <Course {...course} />)
-
-		<BrowserRouter>
-			<div className="all-courses">
-				<div className="course-category header">
-					<h2>Course Categories</h2>
-				</div>
-			</div>
-		</BrowserRouter>
+		<div>
+			<h2>Your course choices</h2>
+			{allCoursesList.map((eachcourse) => (
+				<SingleResource
+					key={eachcourse.title}
+					/* title={eachcourse.title}
+					type={eachcourse.type}
+					overview={eachcourse.overview}
+					photo_link={eachcourse.photo_link}
+					level={eachcourse.level}
+					instructor_name={eachcourse.instructor_name} */
+					// the commented out here could be replaced using the spread operator below, to help make the lines of code conciser.
+					{...eachcourse}
+				/>
+			))}
+		</div>
 	);
 };
 

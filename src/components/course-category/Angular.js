@@ -3,7 +3,7 @@ import SingleResource from '../../pages/Resources';
 import { AngularcourseList } from '../../data/resourcesData';
 // import { resources } from '../../data/resourcesData';
 
-const Angularcourses = (props) => {
+/* const Angularcourses = (props) => {
 	const courseList = AngularcourseList.map((item) => {
 		return (
 			<SingleResource
@@ -24,7 +24,7 @@ const Angularcourses = (props) => {
 	);
 };
 
-export default Angularcourses;
+export default Angularcourses; */
 
 /* const personSchema = {
 	name: string,
@@ -41,3 +41,20 @@ const Oli = {
 	lastName: 'walker'
 };
  */
+
+const angularCheckbox = (props) => {
+	const [ isShowAngular, setIsShowAngular ] = useState(true);
+
+	const handleAngularCheckBoxVal = () => {
+		props.setIsShowAngular(!props.checkBoxVal);
+	};
+
+	return (
+		<div className="checkbox" id="angular-id" style={{ margin: '50px' }}>
+			<label htmlFor="angular-id">Angular</label>
+			<input id="angular-id" type="checkbox" checked={props.isShowAngular} onChange={handleAngularCheckBoxVal} />
+		</div>
+	);
+};
+
+export default angularCheckbox;
