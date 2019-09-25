@@ -5,16 +5,15 @@ import Resources from './pages/Resources';
 import SingleResource from './pages/SingleResource';
 import Share from './pages/Share';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import SearchBox from './components/SearchBox';
 
 const App = () => {
 	return (
 		<BrowserRouter>
 			<div className="App">
-				<SearchBox />
 				<Switch>
 					<Route exact path="/" component={LandingPage} />
 					<Route path="/resources" component={Resources} />
+					<Route path="/resources/ :title" component={SingleResource} />
 					<Route path="/singleresource" component={SingleResource} />
 					<Route path="/share" component={Share} />
 				</Switch>

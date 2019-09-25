@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { allCoursesList } from '../data/resourcesData';
 
-const ResourceDetails = () => {
+const ResourceDetails = (props) => {
+	console.log(props);
+	// const allItems = allCoursesList;
+	// const [ resource, setResource ] = useState([]);
+	// const handleResource = () => {
+	// 	setResource(resource);
+	// };
+
 	return (
 		<div>
-			<h2>Title</h2>
-			<h6>Who this course is for</h6>
-			<p>Description</p>
+			{allCoursesList.map((item) => <h2>{item.title}</h2>)}
+
+			<p>{props.coursetype}</p>
+			<p>{props.overview}</p>
+			<img src={props.photo_link} alt="showing_something" />
+			<h6>{props.level}</h6>
+			<p>{props.instructor_name}</p>
+			<p>Overview</p>
 		</div>
 	);
 };
