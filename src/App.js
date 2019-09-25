@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import LandingPage from './pages/LandingPage';
 import Resources from './pages/Resources';
 import SingleResource from './pages/SingleResource';
 import Share from './pages/Share';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import SearchBox from './components/SearchBox';
 
 const App = () => {
 	return (
 		<BrowserRouter>
 			<div className="App">
+				<SearchBox />
 				<Switch>
 					<Route exact path="/" component={LandingPage} />
 					<Route path="/resources" component={Resources} />
