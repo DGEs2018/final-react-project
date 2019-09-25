@@ -1,6 +1,25 @@
 import React from 'react';
 
 const ResourceCategory = () => {
+	const handleAngularValue = () => {
+		props.setAngularValue(!props.angularValue);
+	};
+	const handleReactValue = () => {
+		props.setReactValue(!props.reactValue);
+	};
+	const handleGitValue = () => {
+		props.setGitValue(!props.gitValue);
+	};
+	const handleJsValue = () => {
+		props.setJsValue(!props.jsValue);
+	};
+
+	const handlePythonValue = () => {
+		props.setPythonValue(!props.pythonValue);
+	};
+	const handleCssValue = () => {
+		props.setCssValue(!props.cssValue);
+	};
 	return (
 		<form>
 			<label htmlFor="angular-checkbox">Angular</label>
