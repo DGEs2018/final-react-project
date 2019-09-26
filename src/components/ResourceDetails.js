@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { allCoursesList } from '../data/resourcesData';
+import Resources from '../pages/Resources';
+import { Link } from 'react-router-dom';
 
 const ResourceDetails = (props) => {
 	console.log(props);
@@ -18,7 +20,10 @@ const ResourceDetails = (props) => {
 			<img src={props.photo_link} alt="showing_something" />
 			<h6>{props.level}</h6>
 			<p>{props.instructor_name}</p>
-			<p>Overview</p>
+			<Link to="/resources">
+				<button>Back to resources</button>
+				<button>Pin or Add to my favourites</button>
+			</Link>
 		</div>
 	);
 };
