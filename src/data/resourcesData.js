@@ -6,7 +6,7 @@ export const allCoursesList = [
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
 	{
@@ -15,7 +15,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://kentcdodds.com/static/metaImage-44e71473e88a40550206e8512992334b.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Kent C Dodds'
 	},
 	{
@@ -24,7 +24,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
 	{
@@ -33,7 +33,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
-		level: 'advanced',
+		level: 'Advanced Level',
 		instructor_name: 'Stephen Grider'
 	},
 	{
@@ -42,7 +42,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://pbs.twimg.com/profile_images/922439672562937857/m5psqUol_400x400.jpg',
-		level: 'intermediate',
+		level: 'Intermediate Level',
 		instructor_name: 'Dave Ceddia'
 	},
 	{
@@ -52,7 +52,7 @@ export const allCoursesList = [
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
 	{
@@ -61,7 +61,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://kentcdodds.com/static/metaImage-44e71473e88a40550206e8512992334b.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Kent C Dodds'
 	},
 	{
@@ -70,7 +70,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
 	{
@@ -79,7 +79,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Hamedani Mosh'
 	},
 	{
@@ -88,7 +88,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://pbs.twimg.com/profile_images/922439672562937857/m5psqUol_400x400.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Dave Ceddia'
 	},
 	{
@@ -98,7 +98,7 @@ export const allCoursesList = [
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
 	{
@@ -107,7 +107,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://kentcdodds.com/static/metaImage-44e71473e88a40550206e8512992334b.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Kent C Dodds'
 	},
 	{
@@ -116,7 +116,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
 	{
@@ -125,7 +125,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
-		level: 'advanced',
+		level: 'Advanced Level',
 		instructor_name: 'Stephen Grider'
 	},
 	{
@@ -134,7 +134,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://pbs.twimg.com/profile_images/922439672562937857/m5psqUol_400x400.jpg',
-		level: 'intermediate',
+		level: 'Intermediate Level',
 		instructor_name: 'Dave Ceddia'
 	},
 	{
@@ -144,7 +144,7 @@ export const allCoursesList = [
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
 	{
@@ -153,7 +153,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://kentcdodds.com/static/metaImage-44e71473e88a40550206e8512992334b.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Kent C Dodds'
 	},
 	{
@@ -162,7 +162,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
 	{
@@ -171,7 +171,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
-		level: 'advanced',
+		level: 'Advanced Level',
 		instructor_name: 'Stephen Grider'
 	},
 	{
@@ -180,7 +180,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://pbs.twimg.com/profile_images/922439672562937857/m5psqUol_400x400.jpg',
-		level: 'intermediate',
+		level: 'Intermediate Level',
 		instructor_name: 'Dave Ceddia'
 	},
 	{
@@ -190,7 +190,7 @@ export const allCoursesList = [
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
 	{
@@ -199,7 +199,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://kentcdodds.com/static/metaImage-44e71473e88a40550206e8512992334b.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Kent C Dodds'
 	},
 	{
@@ -208,7 +208,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
 	{
@@ -217,7 +217,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
-		level: 'advanced',
+		level: 'Advanced Level',
 		instructor_name: 'Stephen Grider'
 	},
 	{
@@ -226,7 +226,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://pbs.twimg.com/profile_images/922439672562937857/m5psqUol_400x400.jpg',
-		level: 'intermediate',
+		level: 'Intermediate Level',
 		instructor_name: 'Dave Ceddia'
 	},
 	{
@@ -236,7 +236,7 @@ export const allCoursesList = [
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link:
 			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
 	{
@@ -245,7 +245,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://kentcdodds.com/static/metaImage-44e71473e88a40550206e8512992334b.jpg',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Kent C Dodds'
 	},
 	{
@@ -254,7 +254,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
-		level: 'beginners',
+		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
 	{
@@ -263,7 +263,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
-		level: 'advanced',
+		level: 'Advanced Level',
 		instructor_name: 'Stephen Grider'
 	},
 	{
@@ -272,7 +272,7 @@ export const allCoursesList = [
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://pbs.twimg.com/profile_images/922439672562937857/m5psqUol_400x400.jpg',
-		level: 'intermediate',
+		level: 'Intermediate Level',
 		instructor_name: 'Dave Ceddia'
 	}
 ];
