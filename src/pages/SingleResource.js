@@ -3,33 +3,37 @@ import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
 
 const SingleResource = (props) => {
+	// console.log (props) helps to log and see what the props are
 	console.log(props);
+
+	// it's to observe from the components window in the inspector that the variable belowthe entire url
 	const courseTitle = props.location.pathname.slice(16);
-	// console.log(courseTitle);
+	console.log(courseTitle);
+
 	// another way to do it using split would be what's below
 	const titleBySplit = props.location.pathname.split('/');
 	console.log(titleBySplit);
-	// out of the splitted array pick out the the 3rd indexed element
+	// out of the splitted array pick out the element on the 3rd index
 	const titleOnly = titleBySplit[2];
 	console.log(titleOnly);
-	const courseType = props.coursetype;
-	console.log(courseType);
+	// const courseType = props.coursetype;
+	// console.log(courseType);
 
 	/* const courseTypes = allCoursesList.map((element) => element.coursetype);
 	console.log(courseTypes); */
-
-	const allAttributes = allCoursesList.find((element) => {
+	// we attach the .find() method on the allAttributes variable which would pick the first one passing the test
+	const allCourseAttributes = allCoursesList.find((element) => {
 		// if the title of singleresource matches the title of one of the item inside the resources array
 		if (courseTitle === element.title) {
 			return element;
 		}
 	});
 
-	console.log(allAttributes);
-
+	console.log(allCourseAttributes);
+	// {...allAttributes} spreads all that there's in the allAttributes variable defined (is one good way of avoiding redundancy)
 	return (
 		<div className="single-resource">
-			<ResourceDetails {...allAttributes} />
+			<ResourceDetails {...allCourseAttributes} />
 		</div>
 	);
 };

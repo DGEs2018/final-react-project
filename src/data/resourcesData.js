@@ -23,13 +23,13 @@ export const allCoursesList = [
 		title: 'Learning CSS with Hands-on exercises',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
+		photo_link: 'https://www.kevinpowell.co/img/kevinpowell.jpg@0,5x.jpg',
 		level: 'Beginner Level',
-		instructor_name: 'Tyler McGinnis'
+		instructor_name: 'Kevin Powell'
 	},
 	{
 		coursetype: 'css',
-		title: 'The complete training of CSS including Redux',
+		title: 'The complete training of CSS including CSS Grids and CSS flexboxes ',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
@@ -69,7 +69,7 @@ export const allCoursesList = [
 		title: 'Javascript for beginners',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
+		photo_link: 'https://pbs.twimg.com/profile_images/1138547910524588034/4R6jdBch_400x400.png',
 		level: 'Beginner Level',
 		instructor_name: 'Tyler McGinnis'
 	},
@@ -112,21 +112,21 @@ export const allCoursesList = [
 	},
 	{
 		coursetype: 'react',
-		title: 'Learning React with Hands-on exercises',
+		title: 'The road to learn React: accompanied by Hands-on exercises',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		photo_link: 'https://unsplash.com/photos/mSkQfIST9jE',
+		photo_link: 'https://d2sofvawe08yqg.cloudfront.net/the-road-to-learn-react/small2x?1549488773',
 		level: 'Beginner Level',
-		instructor_name: 'Tyler McGinnis'
+		instructor_name: 'Robin Wieruch'
 	},
 	{
 		coursetype: 'react',
 		title: 'The complete training of React including Redux',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
+		photo_link: 'https://miro.medium.com/max/2048/0*ml1VcLaxHEdvDRBh.png',
 		level: 'Advanced Level',
-		instructor_name: 'Stephen Grider'
+		instructor_name: 'Maximilian Schwarzmüller'
 	},
 	{
 		coursetype: 'react',
@@ -139,11 +139,10 @@ export const allCoursesList = [
 	},
 	{
 		coursetype: 'angular',
-		title: 'Getting started with Angular framework',
+		title: 'Learn and Understand AngularJS',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		photo_link:
-			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
+		photo_link: 'https://www.sourcecodester.com/sites/default/files/images/admin/angularjs.jpg',
 		level: 'Beginner Level',
 		instructor_name: 'Tony Alicea'
 	},
@@ -185,13 +184,12 @@ export const allCoursesList = [
 	},
 	{
 		coursetype: 'git',
-		title: 'Git Pro',
+		title: 'Pro Git',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		photo_link:
-			'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS32vgvkmwApZkL56c8yUav08bPN7sTgJ1Q9AU9Y3TnW0r92pve',
+		photo_link: 'https://images-na.ssl-images-amazon.com/images/I/81j-vM8vvvL._SY600_.jpg',
 		level: 'Beginner Level',
-		instructor_name: 'Tony Alicea'
+		instructor_name: 'Scott Chacon and Ben Straub'
 	},
 	{
 		coursetype: 'git',
@@ -259,7 +257,7 @@ export const allCoursesList = [
 	},
 	{
 		coursetype: 'python',
-		title: 'The complete training of Python including Redux',
+		title: 'The complete training for Python',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
