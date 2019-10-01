@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { allCoursesList } from '../../data/resourcesData';
 
 const ResourceCategory = (props) => {
-	console.log(props);
+	// console.log(props);
 
 	const [ reactValue, setReactValue ] = useState(false);
 	const [ angularValue, setAngularValue ] = useState(false);

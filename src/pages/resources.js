@@ -1,14 +1,13 @@
 import React from 'react';
 import { allCoursesList } from '../data/resourcesData';
-import SingleResource from './SingleResource';
 import { Link } from 'react-router-dom';
 import SearchBox from '../components/SearchBox';
 import ResourceCategory from '../components/course-category/ResourceCategory';
 
-const Resources = (props) => {
+const Resources = () => {
 	return (
 		<div>
-			<h2>Your course choices</h2>
+			<h2 style={{ backgroundColor: 'lightblue' }}>Your course choices</h2>
 			<SearchBox />
 			<ResourceCategory />
 			<ul>
@@ -27,7 +26,6 @@ const Resources = (props) => {
 export default Resources;
 
 export const OneResource = (props) => {
-	console.log(props);
 	const style = {
 		// display: 'flex',
 		justifyContent: 'flex-start',
