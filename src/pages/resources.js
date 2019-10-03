@@ -1,17 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
 import SearchBox from '../components/SearchBox';
 import ResourceCategory from '../components/course-category/ResourceCategory';
 
-const Resources = () => {
+const Resources = (props) => {
+	// const [ checkBoxValues, setCheckBoxValues ] = useState({});
+
+	console.log(props);
+	const [ reactValue, setReactValue ] = useState(false);
+	const [ angularValue, setAngularValue ] = useState(false);
+	const [ gitValue, setGitValue ] = useState(false);
+	const [ jsValue, setJsValue ] = useState(false);
+	const [ cssValue, setCssValue ] = useState(false);
+	const [ pythonValue, setPythonValue ] = useState(false);
+
+	const filteredCourseList = allCoursesList.filter((el) => {
+		if (
+			(el.coursetype === 'react' && reactValue) ||
+			(el.coursetype === 'css' && cssValue) ||
+			(el.coursetype === 'git' && gitValue) ||
+			(el.coursetype === 'js' && jsValue) ||
+			(el.coursetype === 'angular' && angularValue) ||
+			(el.coursetype === 'python' && pythonValue)
+		) {
+			// reactValue === true, checks to see if the value equals true, truthy state
+			return true;
+		} else {
+			return false;
+		}
+	});
+
 	return (
 		<div>
 			<h2 style={{ backgroundColor: 'lightblue' }}>Your course choices</h2>
 			<SearchBox />
-			<ResourceCategory />
+			<ResourceCategory
+				reactValue={reactValue}
+				setReactValue={setReactValue}
+				angularValue={angularValue}
+				setAngularValue={setAngularValue}
+				gitValue={gitValue}
+				setGitValue={setGitValue}
+				jsValue={jsValue}
+				setJsValue={setJsValue}
+				cssValue={cssValue}
+				setCssValue={setCssValue}
+				pythonValue={pythonValue}
+				setPythonValue={setPythonValue}
+			/>
+
 			<ul>
-				{allCoursesList.map((eachcourse) => (
+				{filteredCourseList.map((eachcourse) => (
 					<OneResource
 						key={eachcourse.title}
 						// the commented out here could be replaced using the spread operator below, to help make the lines of code conciser.
@@ -26,6 +66,7 @@ const Resources = () => {
 export default Resources;
 
 export const OneResource = (props) => {
+	//(props);
 	const style = {
 		// display: 'flex',
 		justifyContent: 'flex-start',
