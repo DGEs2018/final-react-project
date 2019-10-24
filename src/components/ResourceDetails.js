@@ -14,6 +14,7 @@ const ResourceDetails = (props) => {
 			<p>{props.coursetype}</p>
 			<p>{props.overview}</p>
 			<img src={props.photo_link} alt="showing_something" />
+			<p>{props.expected_to_last}</p>
 			<h6>{props.level}</h6>
 			<p>{props.instructor_name}</p>
 			);

@@ -1,11 +1,24 @@
 import React from 'react';
+import '../../css-files/ResourceCategory.css';
 
 const ResourceCategory = (props) => {
-	console.log(props);
+	console.log('CHILD', props);
+
+	// console.log(props.checkBoxValues.angularValue);
 
 	return (
-		<form>
-			<label htmlFor="angular-checkbox">Angular</label>
+		<form className="all-checkboxes">
+			{/* <label htmlFor="angular-checkbox">Angular</label> */}
+			{/* <input
+				type="checkbox"
+				id="angular-checkbox"
+				checked={props.checkBoxValues.angularValue}
+				onChange={() => {
+					console.log('I AM CLICKING');
+
+					props.setCheckBoxValues(!props.checkBoxValues);
+				}}
+			/> */}
 			<input
 				type="checkbox"
 				id="angular-checkbox"
@@ -14,7 +27,8 @@ const ResourceCategory = (props) => {
 					props.setAngularValue(!props.angularValue);
 				}}
 			/>
-			<label htmlFor="react-checkbox">React</label>
+			<label className="angular-label" htmlFor="angular-checkbox">Angular</label>
+
 			<input
 				type="checkbox"
 				id="react-checkbox"
@@ -23,7 +37,8 @@ const ResourceCategory = (props) => {
 					props.setReactValue(!props.reactValue);
 				}}
 			/>
-			<label htmlFor="git-checkbox">Git</label>
+			<label className="react-label" htmlFor="react-checkbox">React</label>
+
 			<input
 				type="checkbox"
 				id="git-checkbox"
@@ -32,7 +47,8 @@ const ResourceCategory = (props) => {
 					props.setGitValue(!props.gitValue);
 				}}
 			/>
-			<label htmlFor="js-checkbox">JavaScript</label>
+			<label className="git-label" htmlFor="git-checkbox">Git</label>
+
 			<input
 				type="checkbox"
 				id="js-checkbox"
@@ -41,7 +57,8 @@ const ResourceCategory = (props) => {
 					props.setJsValue(!props.jsValue);
 				}}
 			/>
-			<label htmlFor="css-checkbox">CSS</label>
+			<label className="js-label" htmlFor="js-checkbox">JavaScript</label>
+
 			<input
 				type="checkbox"
 				id="css-checkbox"
@@ -50,7 +67,8 @@ const ResourceCategory = (props) => {
 					props.setCssValue(!props.cssValue);
 				}}
 			/>
-			<label htmlFor="python-checkbox">Python</label>
+			<label className="css-label" htmlFor="css-checkbox">CSS</label>
+
 			<input
 				type="checkbox"
 				id="python-checkbox"
@@ -59,6 +77,8 @@ const ResourceCategory = (props) => {
 					props.setPythonValue(!props.pythonValue);
 				}}
 			/>
+			<label className="python-label" htmlFor="python-checkbox">Python</label>
+
 		</form>
 	);
 };

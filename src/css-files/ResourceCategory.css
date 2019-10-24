@@ -1,0 +1,23 @@
+#angular-checkbox + label:before{
+    /* content: "\2714"; */
+    border: 0.2em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin-right: 0.2em;
+}
+
+#angular-checkbox:checked + label:before {
+    background-color: MediumSeaGreen;
+}
+
+.angular-label, .react-label, .git-label, .js-label, .css-label, .python-label {
+    margin: 0.125rem 0;
+    padding: 0 1rem;
+}
+
+.all-checkboxes {
+    margin: 2px 8px;
+    display: block;
+}

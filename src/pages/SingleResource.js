@@ -1,6 +1,12 @@
 import React from 'react';
 import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import '../css-files/SingleResource.css';
+import {NavBar} from './LandingPage';
+
+
 
 const SingleResource = (props) => {
 	// console.log (props) helps to log and see what the props are
@@ -16,11 +22,7 @@ const SingleResource = (props) => {
 	// out of the splitted array pick out the element on the 3rd index
 	const titleOnly = titleBySplit[2];
 	console.log(titleOnly);
-	// const courseType = props.coursetype;
-	// console.log(courseType);
-
-	/* const courseTypes = allCoursesList.map((element) => element.coursetype);
-	console.log(courseTypes); */
+	
 	// we attach the .find() method on the allAttributes variable which would pick the first one passing the test
 	const allCourseAttributes = allCoursesList.find((element) => {
 		// if the title of singleresource matches the title of one of the item inside the resources array
@@ -31,8 +33,9 @@ const SingleResource = (props) => {
 
 	console.log(allCourseAttributes);
 	// {...allAttributes} spreads all that there's in the allAttributes variable defined (is one good way of avoiding redundancy)
+	// was the name assigned to the div below, className="single-resource"
 	return (
-		<div className="single-resource">
+		<div> 
 			<ResourceDetails {...allCourseAttributes} />
 		</div>
 	);
@@ -42,23 +45,26 @@ export default SingleResource;
 
 const ResourceDetails = (props) => {
 	console.log(props);
-
-	// let data = { pathname: '/resources/:id' };
+	
 	return (
-		<div>
-			<div>
-				<h2 textAlign="left">{props.title}</h2>
-				<p>{props.coursetype}</p>
-				<p width="600px" textAlign="justify">
-					{props.overview}
-				</p>
-				<img src={props.photo_link} alt="showing_something" width="600px" height="600px" />
+		<div className='resource'>
+			<NavBar />
+			<div className='image-holder'>
+				<img className='resource--image' 
+					// className={Style.card}
+					src={props.preview_image}
+					image={props.preview_image}
+				/>
+			</div>
+			<div className='resource--more'>
+				<h3>{props.title}</h3>
+				<h5>{props.overview}</h5>
 				<h6>{props.level}</h6>
 				<p>{props.instructor_name}</p>
-			</div>
+			</div>	
 			<Link to="/resources">
-				<button>Back to resources</button>
-				<button>Pin/Add to favourites</button>
+				<Button size="small" color="primary">Back to resources</Button>
+				<Button size="small" color="primary"> Pin/Add to favourites </Button>
 			</Link>
 		</div>
 	);

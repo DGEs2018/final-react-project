@@ -1,12 +1,29 @@
-import React, { useState } from 'react';
+import React, { Component, useState } from 'react';
 import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
-import SearchBox from '../components/SearchBox';
 import ResourceCategory from '../components/course-category/ResourceCategory';
+import Grid from '@material-ui/core/Grid';
+import TextField from '@material-ui/core/TextField';
+// import * as contentful from 'contentful';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
+import '../css-files/IndividualCourseStyle.css';
+import {NavBar} from './LandingPage';
+import '../css-files/Resources.css'
+
+
+const CourseStat = (props) => {
+	console.log(props);
+	return (
+		<div>
+			<p>{props.numberOfCourses} / {allCoursesList.length} courses listed</p>
+		</div>
+	);
+};
 
 const Resources = (props) => {
-	// const [ checkBoxValues, setCheckBoxValues ] = useState({});
-
 	console.log(props);
 	const [ reactValue, setReactValue ] = useState(false);
 	const [ angularValue, setAngularValue ] = useState(false);
@@ -15,13 +32,20 @@ const Resources = (props) => {
 	const [ cssValue, setCssValue ] = useState(false);
 	const [ pythonValue, setPythonValue ] = useState(false);
 
+	
+
 	const filteredCourseList = allCoursesList.filter((el) => {
-		if (
+
+if (angularValue === false && reactValue === false && cssValue === false && gitValue === false && jsValue === false && pythonValue === false) {
+	return true
+} else if (
+			// el.coursetype === 'angular' &&
+			// checkBoxValues.angularValue
+			(el.coursetype === 'angular' && angularValue) ||
 			(el.coursetype === 'react' && reactValue) ||
 			(el.coursetype === 'css' && cssValue) ||
 			(el.coursetype === 'git' && gitValue) ||
 			(el.coursetype === 'js' && jsValue) ||
-			(el.coursetype === 'angular' && angularValue) ||
 			(el.coursetype === 'python' && pythonValue)
 		) {
 			// reactValue === true, checks to see if the value equals true, truthy state
@@ -30,63 +54,59 @@ const Resources = (props) => {
 			return false;
 		}
 	});
-
+	// console.log('PARENT', checkBoxValues);
 	return (
 		<div>
-			<h2 style={{ backgroundColor: 'lightblue' }}>Your course choices</h2>
-			<SearchBox />
-			<ResourceCategory
-				reactValue={reactValue}
-				setReactValue={setReactValue}
-				angularValue={angularValue}
-				setAngularValue={setAngularValue}
-				gitValue={gitValue}
-				setGitValue={setGitValue}
-				jsValue={jsValue}
-				setJsValue={setJsValue}
-				cssValue={cssValue}
-				setCssValue={setCssValue}
-				pythonValue={pythonValue}
-				setPythonValue={setPythonValue}
-			/>
-
-			<ul>
-				{filteredCourseList.map((eachcourse) => (
-					<OneResource
-						key={eachcourse.title}
-						// the commented out here could be replaced using the spread operator below, to help make the lines of code conciser.
-						{...eachcourse}
-					/>
-				))}
-			</ul>
+			<NavBar />
+			<div className="resources">
+				<h1>Course Categories in Front-end Web Development</h1>
+				<ResourceCategory
+					reactValue={reactValue}
+					setReactValue={setReactValue}
+					angularValue={angularValue}
+					setAngularValue={setAngularValue}
+					gitValue={gitValue}
+					setGitValue={setGitValue}
+					jsValue={jsValue}
+					setJsValue={setJsValue}
+					cssValue={cssValue}
+					setCssValue={setCssValue}
+					pythonValue={pythonValue}
+					setPythonValue={setPythonValue}
+				/>
+				<CourseStat numberOfCourses={filteredCourseList.length}  totalCourses={allCoursesList.length} />
+				<ul>
+					{filteredCourseList.map((eachcourse) => (
+						<OneResource
+							key={eachcourse.title}
+							// the commented out here could be replaced using the spread operator below, to help make the lines of code conciser.
+							{...eachcourse}
+						/>
+					))}
+				</ul>
+			</div>
 		</div>
+	);
+};
+
+export const OneResource = (props) => {
+	//(props);
+	return (
+			<div  className="one-resource">
+					<img className="one-resource--image"src={props.preview_image} alt='' />
+					<div>
+						<Link to={`/singleresource/${props.title}`}>
+							<h1>{props.title}</h1>
+						</Link>
+						<h1>{props.coursetype}</h1>
+						<h5>{props.level}</h5>
+						<p>{props.instructor_name}</p>
+					</div>
+					{/* <Link to={`/`}>
+						<Button size="small" color="primary">Back to homepage</Button>
+					</Link> */}
+			</div>
 	);
 };
 
 export default Resources;
-
-export const OneResource = (props) => {
-	//(props);
-	const style = {
-		// display: 'flex',
-		justifyContent: 'flex-start',
-		flexDirection: 'column',
-		borderRadius: '1px solid grey',
-		backgroundColor: 'lightgrey',
-		lineHeight: '24px',
-		margin: '0 auto'
-	};
-	return (
-		<div className="single-resource" style={style}>
-			{/* <h1>Hello SingleResource</h1> */}
-			<Link to={`/singleresource/${props.title}`}>
-				<h2>{props.title}</h2>
-			</Link>
-			<h3>{props.coursetype}</h3>
-			<p>{props.overview}</p>
-			<img src={props.link_photo} alt="something" />
-			<h3>{props.level}</h3>
-			<p>{props.instructor_name}</p>
-		</div>
-	);
-};
