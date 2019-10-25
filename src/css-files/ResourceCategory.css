@@ -1,10 +1,10 @@
 #angular-checkbox + label:before{
-    border: 0.2em solid #000;
-    border-radius: 0.2em;
+    border: 0.2rem solid #000;
+    border-radius: 0.2rem;
     display: inline-block;
-    width: 2em;
-    height: 2em;
-    margin-right: 0.2em;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.2rem;
 }
 
 #angular-checkboxes:checked + label:before {
