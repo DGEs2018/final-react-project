@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import {NavBar} from './LandingPage';
-
+import '../css-files/SingleResource.css';
 
 
 const SingleResource = (props) => {
@@ -46,22 +46,26 @@ const ResourceDetails = (props) => {
 	console.log(props);
 	
 	return (
-		<div className='resource'>
+		<div >
 			<NavBar />
-			<div className='image-holder'>
-				<img className='resource--image' 
-					// className={Style.card}
-					src={props.preview_image}
-					image={props.preview_image}
-				/>
-			</div>
-			<div className='resource--more'>
-				<h1>{props.title}</h1>
-				<h2>Course Overview</h2>
-				<h6>{props.overview}</h6>	
-				<h6>{props.level}</h6>
-				<p>{props.instructor_name}</p>
-			</div>	
+			<div className='resource'>
+				<div className='resource--image'>
+					{/* <div className='image-holder'> */}
+						<img 
+							// className={Style.card}
+							src={props.preview_image}
+							image={props.preview_image}
+						/>
+					{/* </div> */}
+					<div className='resource--more'>
+						<h1>{props.title}</h1>
+						<h2>Course Overview</h2>
+						<p>{props.overview}</p>	
+						<h5>{props.level}</h5>
+						<p>{props.instructor_name}</p>
+					</div>
+				</div>
+			</div>		
 			<Link to="/resources">
 				<Button size="small" color="primary">Back to resources</Button>
 				<Button size="small" color="primary"> Pin/Add to favourites </Button>
