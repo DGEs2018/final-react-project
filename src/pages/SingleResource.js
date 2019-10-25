@@ -3,7 +3,6 @@ import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import '../css-files/SingleResource.css';
 import {NavBar} from './LandingPage';
 
 
@@ -57,8 +56,9 @@ const ResourceDetails = (props) => {
 				/>
 			</div>
 			<div className='resource--more'>
-				<h3>{props.title}</h3>
-				<h5>{props.overview}</h5>
+				<h1>{props.title}</h1>
+				<h2>Course Overview</h2>
+				<h6>{props.overview}</h6>	
 				<h6>{props.level}</h6>
 				<p>{props.instructor_name}</p>
 			</div>	

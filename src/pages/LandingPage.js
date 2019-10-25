@@ -24,6 +24,8 @@ const LandingPage = (props) => {
 		<div className="landing-page">
 			{/* <h1>A platform for sharing course materials</h1> */}
 			<NavBar />
+			<h1 className="header">Welcome to Powercoder's colleagues</h1>
+			<p className="lead-paragraph">:a platform where you can exchange learning materials</p>
 			{/* <Link to={`/resources`} className='landing-page--linkbutton' >
 				<div>Courses for Front-end Web </div>
 			</Link> */}

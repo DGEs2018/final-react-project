@@ -2,14 +2,6 @@ import React, { Component, useState } from 'react';
 import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
 import ResourceCategory from '../components/course-category/ResourceCategory';
-import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
-// import * as contentful from 'contentful';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import '../css-files/IndividualCourseStyle.css';
 import {NavBar} from './LandingPage';
 import '../css-files/Resources.css'
 
@@ -75,7 +67,7 @@ if (angularValue === false && reactValue === false && cssValue === false && gitV
 					setPythonValue={setPythonValue}
 				/>
 				<CourseStat numberOfCourses={filteredCourseList.length}  totalCourses={allCoursesList.length} />
-				<ul>
+				<ul className="course-list">
 					{filteredCourseList.map((eachcourse) => (
 						<OneResource
 							key={eachcourse.title}
@@ -92,14 +84,14 @@ if (angularValue === false && reactValue === false && cssValue === false && gitV
 export const OneResource = (props) => {
 	//(props);
 	return (
-			<div  className="one-resource">
+			<div className="one-resource">
 					<img className="one-resource--image"src={props.preview_image} alt='' />
 					<div>
 						<Link to={`/singleresource/${props.title}`}>
 							<h1>{props.title}</h1>
 						</Link>
-						<h1>{props.coursetype}</h1>
-						<h5>{props.level}</h5>
+						<h2>{props.coursetype}</h2>
+						<h3>{props.level}</h3>
 						<p>{props.instructor_name}</p>
 					</div>
 					{/* <Link to={`/`}>

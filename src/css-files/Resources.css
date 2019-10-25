@@ -1,38 +1,32 @@
 .resources {
-    /* height: 100vh;
-    margin: 0 auto; */
-    /* margin:10px 80px;
-    padding: 10px 20px; */
     max-width: 62.5rem;
-    /* width: 100%; */
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 25px 25px;
-
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    /* justify-content: justify; */
-    /* padding: 2rem 0; */
-    /* width: 70vw; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
+    border: 10px solid;
+    margin: 0 auto;
 }
 .one-resource {
+  border: 2px solid lightgreen;  
   display: grid;
-  width: 69.44%;
+  width: 61.25%;
   align-items: center;
-  justify-content: center;
-  /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 0.5rem;
-  row-gap: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid #fff;
+  grid-template-columns: 40% 60%;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  margin: 20px auto;
+  
 
 }
 
 .one-resource--image {
-    width: 24rem;
-    height: 24rem;
+    width: 16rem;
+    height: 16rem;  
+}
+
+h1 {
+    text-align: center;
+    padding: 0px 10px;
+}
+.course-list {
+    border: 5px solid red;
+    margin: 0 auto;
+    padding: 0 auto;
 }

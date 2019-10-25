@@ -35,10 +35,10 @@ export const allCoursesList = [
 	},
 	{
 		coursetype: 'css',
-		title: 'CSS - The Complete Guide (incl. Flexbox, Grid and Sass)',
+		title: 'CSS - The Complete Guide',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
-		preview_image: 'https://www.safaribooksonline.com/library/cover/9781789954692/360h/',
+		preview_image: 'https://freecoursestore.com/public/img/1563965282CSS%20-%20The%20Complete%20Guide%20(incl.%20Flexbox,%20Grid%20&%20Sass).jpg',
 		photo_link: 'https://hackr.io/users/mosh-ham/avatar/medium?ver=1568264417',
 		level: 'Advanced Level',
 		expected_to_last: '2 weeks, with 7 to 10 hours per week',
@@ -57,7 +57,7 @@ export const allCoursesList = [
 	},
 	{
 		coursetype: 'js',
-		title: 'Understanding the weird parts of JavaScript',
+		title: 'JavaScript-understanding the weird parts',
 		overview:
 			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam ipsum accusantium incidunt animi quasi',
 		preview_image: 'https://i.udemycdn.com/course/750x422/364426_2991_5.jpg',
