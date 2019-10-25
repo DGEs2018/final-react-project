@@ -7,13 +7,15 @@
     margin-right: 0.2rem;
 }
 
-#angular-checkboxes:checked + label:before {
+/* #angular-checkboxes:checked + label:before {
     background-color: MediumSeaGreen;
-}
+} */
 
 .angular-label, .react-label, .git-label, .js-label, .css-label, .python-label {
-    margin: 0 0.125rem;
-    padding: 0 1rem;
+    margin-right: 1rem;
+    margin-left: 0.25rem;
+    padding: 0 0.25rem;
+
 }
 
 .all-checkboxes {
