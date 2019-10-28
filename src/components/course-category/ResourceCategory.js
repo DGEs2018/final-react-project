@@ -12,7 +12,7 @@ const ResourceCategory = (props) => {
 					props.setAngularValue(!props.angularValue);
 				}}
 			/>
-			<label className="angular-label" htmlFor="angular-checkbox">
+			<label className="course-label" htmlFor="angular-checkbox">
 				Angular
 			</label>
 
@@ -24,7 +24,7 @@ const ResourceCategory = (props) => {
 					props.setReactValue(!props.reactValue);
 				}}
 			/>
-			<label className="react-label" htmlFor="react-checkbox">
+			<label className="course-label" htmlFor="react-checkbox">
 				React
 			</label>
 
@@ -36,7 +36,7 @@ const ResourceCategory = (props) => {
 					props.setGitValue(!props.gitValue);
 				}}
 			/>
-			<label className="git-label" htmlFor="git-checkbox">
+			<label className="course-label" htmlFor="git-checkbox">
 				Git
 			</label>
 
@@ -48,7 +48,7 @@ const ResourceCategory = (props) => {
 					props.setJsValue(!props.jsValue);
 				}}
 			/>
-			<label className="js-label" htmlFor="js-checkbox">
+			<label className="course-label" htmlFor="js-checkbox">
 				JavaScript
 			</label>
 
@@ -60,7 +60,7 @@ const ResourceCategory = (props) => {
 					props.setCssValue(!props.cssValue);
 				}}
 			/>
-			<label className="css-label" htmlFor="css-checkbox">
+			<label className="course-label" htmlFor="css-checkbox">
 				CSS
 			</label>
 
@@ -72,7 +72,7 @@ const ResourceCategory = (props) => {
 					props.setPythonValue(!props.pythonValue);
 				}}
 			/>
-			<label className="python-label" htmlFor="python-checkbox">
+			<label className="course-label" htmlFor="python-checkbox">
 				Python
 			</label>
 		</form>

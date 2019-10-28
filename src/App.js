@@ -3,7 +3,6 @@ import './App.css';
 import LandingPage from './pages/LandingPage';
 import Resources from './pages/Resources';
 import SingleResource from './pages/SingleResource';
-import Share from './pages/Share';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 const App = () => {
@@ -13,9 +12,7 @@ const App = () => {
 				<Switch>
 					<Route exact path="/" component={LandingPage} />
 					<Route path="/resources" component={Resources} />
-					<Route path="/resources/ :title" component={SingleResource} />
 					<Route path="/singleresource" component={SingleResource} />
-					<Route path="/share" component={Share} />
 				</Switch>
 			</div>
 		</BrowserRouter>

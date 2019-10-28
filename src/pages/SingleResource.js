@@ -1,7 +1,6 @@
 import React from 'react';
 import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
 import { NavBar } from './LandingPage';
 import '../css-files/SingleResource.css';
 
@@ -22,8 +21,6 @@ const SingleResource = (props) => {
 export default SingleResource;
 
 const ResourceDetails = (props) => {
-	console.log(props);
-
 	return (
 		<div>
 			<NavBar />
@@ -40,13 +37,7 @@ const ResourceDetails = (props) => {
 				</div>
 			</div>
 			<Link to="/resources">
-				<Button size="small" color="primary">
-					Back to resources
-				</Button>
-				<Button size="small" color="primary">
-					{' '}
-					Pin/Add to favourites{' '}
-				</Button>
+				<button>Back to resources</button>
 			</Link>
 		</div>
 	);

@@ -69,13 +69,7 @@ const Resources = (props) => {
 				/>
 				<CourseStat numberOfCourses={filteredCourseList.length} totalCourses={allCoursesList.length} />
 				<ul className="course-list">
-					{filteredCourseList.map((eachcourse) => (
-						<OneResource
-							key={eachcourse.title}
-							// the commented out here could be replaced using the spread operator below, to help make the lines of code conciser.
-							{...eachcourse}
-						/>
-					))}
+					{filteredCourseList.map((eachcourse) => <OneResource key={eachcourse.title} {...eachcourse} />)}
 				</ul>
 			</div>
 		</div>
@@ -89,7 +83,7 @@ export const OneResource = (props) => {
 			<img className="one-resource--image" src={props.preview_image} alt="" />
 			<div>
 				<Link to={`/singleresource/${props.title}`}>
-					<h1>{props.title}</h1>
+					<h1 className="course-title">{props.title}</h1>
 				</Link>
 				<h2>{props.coursetype}</h2>
 				<h3>{props.level}</h3>

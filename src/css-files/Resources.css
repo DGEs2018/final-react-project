@@ -19,7 +19,7 @@
     height: 16rem;  
 }
 
-h1 {
+.course-title {
     text-align: center;
     padding: 0px 10px;
 }
