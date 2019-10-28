@@ -1,16 +1,17 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { allCoursesList } from '../data/resourcesData';
 import { Link } from 'react-router-dom';
 import ResourceCategory from '../components/course-category/ResourceCategory';
-import {NavBar} from './LandingPage';
-import '../css-files/Resources.css'
-
+import { NavBar } from './LandingPage';
+import '../css-files/Resources.css';
 
 const CourseStat = (props) => {
 	console.log(props);
 	return (
 		<div>
-			<p>{props.numberOfCourses} / {allCoursesList.length} courses listed</p>
+			<p>
+				{props.numberOfCourses} / {allCoursesList.length} courses listed
+			</p>
 		</div>
 	);
 };
@@ -24,15 +25,17 @@ const Resources = (props) => {
 	const [ cssValue, setCssValue ] = useState(false);
 	const [ pythonValue, setPythonValue ] = useState(false);
 
-	
-
 	const filteredCourseList = allCoursesList.filter((el) => {
-
-if (angularValue === false && reactValue === false && cssValue === false && gitValue === false && jsValue === false && pythonValue === false) {
-	return true
-} else if (
-			// el.coursetype === 'angular' &&
-			// checkBoxValues.angularValue
+		if (
+			angularValue === false &&
+			reactValue === false &&
+			cssValue === false &&
+			gitValue === false &&
+			jsValue === false &&
+			pythonValue === false
+		) {
+			return true;
+		} else if (
 			(el.coursetype === 'angular' && angularValue) ||
 			(el.coursetype === 'react' && reactValue) ||
 			(el.coursetype === 'css' && cssValue) ||
@@ -40,13 +43,11 @@ if (angularValue === false && reactValue === false && cssValue === false && gitV
 			(el.coursetype === 'js' && jsValue) ||
 			(el.coursetype === 'python' && pythonValue)
 		) {
-			// reactValue === true, checks to see if the value equals true, truthy state
 			return true;
 		} else {
 			return false;
 		}
 	});
-	// console.log('PARENT', checkBoxValues);
 	return (
 		<div>
 			<NavBar />
@@ -66,7 +67,7 @@ if (angularValue === false && reactValue === false && cssValue === false && gitV
 					pythonValue={pythonValue}
 					setPythonValue={setPythonValue}
 				/>
-				<CourseStat numberOfCourses={filteredCourseList.length}  totalCourses={allCoursesList.length} />
+				<CourseStat numberOfCourses={filteredCourseList.length} totalCourses={allCoursesList.length} />
 				<ul className="course-list">
 					{filteredCourseList.map((eachcourse) => (
 						<OneResource
@@ -84,20 +85,17 @@ if (angularValue === false && reactValue === false && cssValue === false && gitV
 export const OneResource = (props) => {
 	//(props);
 	return (
-			<div className="one-resource">
-					<img className="one-resource--image"src={props.preview_image} alt='' />
-					<div>
-						<Link to={`/singleresource/${props.title}`}>
-							<h1>{props.title}</h1>
-						</Link>
-						<h2>{props.coursetype}</h2>
-						<h3>{props.level}</h3>
-						<p>{props.instructor_name}</p>
-					</div>
-					{/* <Link to={`/`}>
-						<Button size="small" color="primary">Back to homepage</Button>
-					</Link> */}
+		<div className="one-resource">
+			<img className="one-resource--image" src={props.preview_image} alt="" />
+			<div>
+				<Link to={`/singleresource/${props.title}`}>
+					<h1>{props.title}</h1>
+				</Link>
+				<h2>{props.coursetype}</h2>
+				<h3>{props.level}</h3>
+				<p>{props.instructor_name}</p>
 			</div>
+		</div>
 	);
 };
 

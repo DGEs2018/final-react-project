@@ -1,13 +1,7 @@
-import React, { useState } from 'react';
-import { allCoursesList } from '../data/resourcesData';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ResourceDetails = (props) => {
-	// const item ;
-	// const urlSearch = props.location.search;
-	// const params = new URLSearchParams(urlSearch);
-	// const
-
 	return (
 		<div>
 			<h2>{props.title}</h2>
