@@ -1,0 +1,19 @@
+.resource {
+    display: grid;
+    border-radius: 0.8rem;
+    margin: 0.4rem 0; 
+	grid-template-columns: 1fr; 
+
+}
+
+.resource--more {
+    max-width: 61.25rem;
+    text-align: left;
+    margin: auto 15rem;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;    
+}
